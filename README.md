@@ -47,7 +47,7 @@ python RQ1.py
 
 * The scripts for RQ2 and RQ3 can be implemented by simply modifying RQ1 
 
-* For example, if you want to run experiment on Chart with version 1, chang line 546 to:
+* For example, if you want to run experiment on Chart with version 1, change line 546 to:
 ~~~
 project=[['Chart',1,1,[]]]
 #form:["project name",start version, end version,[skiped versions list]]
