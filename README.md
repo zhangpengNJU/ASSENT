@@ -43,7 +43,7 @@ python RQ1.py
 ~~~
 * It will compute OP values for all MTEs.
 
-* You can set the running project and version number on line 546, and you can set the output folder on line 548.
+* You can set the running project and version number on line 546, and you **must set the output folder on line 548**.
 
 * The scripts for RQ2 and RQ3 can be implemented by simply modifying RQ1 
 
@@ -53,6 +53,7 @@ project=[['Chart',1,1,[]]]
 #form:["project name",start version, end version,[skiped versions list]]
 ~~~
 
+* The results of RQ1 are in /RQ1-3/results. The name of CSV shows the index of projects (e.g., 0j.csv->Chart, 16j.csv->Time). The first row of CSV shows the version of projects. The remain rows show ['SC','BC','MS','SMS','CMS','RMS','COS']'s OP value, correspondly.
 ### RQ4: Using automatic test suites to compare MTEs
 
 * Run the script by 
@@ -65,8 +66,8 @@ python compareAutoTest.py'
 
 * The other steps are consistent with RQ1. The final generated set of test cases and OP result reports will be stored in the specified location.
 
-* You can set the running project and version number on line 253, and you can set the output folder on line 256.
-
+* You can set the running project and version number on line 253, and you **must set the output folder on line 256**.
+* The results of RQ4 are in /RQ4/results. The test suites are included.
 ### RQ5: Using statistical indicators to compare MTEs
 
 Run the script by 
@@ -81,6 +82,7 @@ python RQ5.py
 * Ground Truth (fault detection): if at least one triggering test case in the suite, it will be labeled as detected.
 
 Change line 414 to set the path of output.
+The results of RQ5 are in /RQ5/results.
 
 ### RQ6: Using PC to compare MTEs
 
@@ -90,3 +92,4 @@ python RQ6.py
 ~~~
 * To compute PC, the kill matrix and the coverage matrix are used.
 * Line 414 and line 415 should be changed as RQ5.
+* The results of RQ6 are in /RQ6.
