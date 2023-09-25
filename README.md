@@ -93,3 +93,7 @@ python3 RQ6.py
 * To compute PC, the kill matrix and the coverage matrix are used.
 * Line 414 and line 415 should be changed as RQ5.
 * The results of RQ6 are in /RQ6.
+
+### Pictures
+
+* P1-P4 show the screenshots of the ASSENT.
